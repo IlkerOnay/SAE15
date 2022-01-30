@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="p-3 bg-dark text-white">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <a class="text-decoration-none text-reset" href="#">
+                    <h1 class="fs-3">SAE15-ONAY & MERENNA</h1>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container d-flex flex-column align-items-center my-5">
+        <div class="mb-2  d-flex align-items-center flex-column">
+            <h2 class="fs-2">Notre database</h2>
+            <span class="fs-5">Voici, la collection de database obtenue via nos programmes de scraping</span>
+        </div>
+
+        <table class="table table-dark table-striped mb-5">
+            <thead>
+                <tr>
+                    <th scope="col">Échantillon</th>
+                    <th scope="col">1</th>
+                    <th scope="col">2</th>
+                    <th scope="col">3</th>
+                    <th scope="col">4</th>
+                    <th scope="col">5</th>
+                    <th scope="col">6</th>
+                    <th scope="col">7</th>
+                    <th scope="col">8</th>
+                    <th scope="col">9</th>
+                    <th scope="col">10</th>
+                    <th scope="col">11</th>
+                    <th scope="col">12</th>
+                    <th scope="col">Moyenne</th>
+                    <th scope="col">Écart-type</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Places libres de voitures</th>
+                    <td>125</td>
+                    <td>212</td>
+                    <td>358</td>
+                    <td>497</td>
+                    <td>528</td>
+                    <td>534</td>
+                    <td>517</td>
+                    <td>521</td>
+                    <td>520</td>
+                    <td>521</td>
+                    <td>502</td>
+                    <td>460</td>
+                    <td>440.5</td>
+                    <td>131.05</td>
+                </tr>
+                <tr>
+                    <th scope="row">PLaces libres de Vélomag</th>
+                    <td>19</td>
+                    <td>21</td>
+                    <td>23</td>
+                    <td>24</td>
+                    <td>24</td>
+                    <td>24</td>
+                    <td>22</td>
+                    <td>21</td>
+                    <td>21</td>
+                    <td>21</td>
+                    <td>21</td>
+                    <td>20</td>
+                    <td>21.75</td>
+                    <td>1.59</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="card-custom card bg-light" style="width: 70rem;">
+            <div class="card-body d-flex align-items-center flex-column mb-3">
+                <h3 class="card-title">Place de la Comédie</h3>
+                <p class="card-text">Représentation graphique du parking et du Vélomag de la place de la Comédie de
+                    Montpellier</p>
+            </div>
+            <div class="hover-img">
+                <img src="/img/gnu.png" class="card-img-top grow" alt="Représentation graphique de la base de données">
+                <div class="text-block">
+                    <h4>Hover me</h4>
+                </div>
+            </div>
+            <span class="mt-2 py-3 px-3">
+                <b> Observations :
+                    Nous avons effectué 12 échantillons dont une par heure de 23h jusqu'à 11H<br><br></b>
+                On observe qu'en moyenne il y'a 440 places de parking libres (voiture) et 21 places de vélomag libres,
+                c'est
+                à dire 21 vélos non utilisés
+                On observe aussi qu'entre chaque heure, il y'a un changement de 131 places de parking libres d'après
+                l'écart type, et que pour le Vélomag un changement de 1,59 (~=2). On observe donc de forts changement
+                pour le parking voiture mais très peu pour le vélomag (environ 2 fois plus selon le pourcentage car, 131
+                voitures correspond environ à 15% et 2 vélo à 8% selon leur place totale respectives.)
+                On peut remarquer une forte augmentation des places libres de 0h à 3h puis des changements moins
+                considérables.
+                Que peut t-on en déduire d'après nos observations? D'après nos constatation et nos calcules mais aussi,
+                comme le
+                prouve notre coefficient de corrélations (qui n'est pas sur le graphique mes stocké dans un fichier
+                nommée "coefficient_corelation.dat"). On peut en déduire une faible corrélation positive (coef=0,49
+                environ, toujours compris entre -1 et 1). <br><br>
+                Mais ce n'est qu'une hypothèse, nous avons très peu de data sur lequel appuyez nos calculs cela reste
+                donc
+                incertains.
+            </span>
+        </div>
+
+    </main>
+    <footer class="my-1 d-flex justify-content-center border-top">
+        <p class="text-center text-muted">© 2022 ONAY & MERENNA</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+body {
+    background-color: #dddddd!important;
+}
+
+.card-body {
+    border-bottom: solid 1px #212529;
+}
+
+.grow {
+    transition: all .6s ease-in-out;
+}
+
+.grow:hover {
+    transform: scale(1.4);
+}
+
+.text-block {
+    transition: .5s ease;
+    opacity: 1;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: #212529;
+    color: white;
+    font-size: 16px;
+    padding: 16px;
+    border-radius: 15px;
+}
+
+.hover-img:hover .text-block {
+    opacity: 0;
+}
